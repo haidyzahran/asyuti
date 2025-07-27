@@ -1,0 +1,260 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 33vh;
+  overflow: hidden;
+  background-image: url('/assets/images/buy3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  animation: growFromCenter .3s ease-out forwards;
+}
+
+@keyframes growFromCenter {
+  0% {
+    background-size: 0 0;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.text {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.text-right {
+  transform: translateX(150%);
+  animation: slideInRight 0.6s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.text-left {
+  transform: translateX(-150%);
+  animation: slideInLeft 0.6s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+
+.call-now {
+  transform: translateY(100%);
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+.phone-animate {
+  transform: translateY(100%);
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.green {
+  color: #00a693;
+  font-size: 18px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-container {
+    width: 100%;
+    height: 25vh; 
+    
+  }
+  .text-left {
+    font-size: 22px;
+  }
+  .text-right {
+    font-size: 12px;
+  }
+}
+
+
+/* 3rd */
+.third-container {
+  width: 74%;
+  position: relative;
+  margin: auto;
+}
+
+.phone-btn2 {
+  display: flex;
+  width: 210px;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 12px;
+  border: 3px solid #dad9d9;
+  border-radius: 40px;
+  background-color: #d8d7d7; 
+  color: rgb(1, 12, 56);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 0;
+}
+
+.card-custom {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.custom-img {
+  width: 300px; 
+  height: auto;
+}
+
+.text-dark-blue {
+  color: #012f5e; 
+}
+@media (max-width: 991.98px) {
+  .text-content {
+    font-size: 16px; 
+    
+  }
+  .text-content i{
+    font-size: 16px; 
+    
+  }
+  .third-container {
+    width: 99%;
+  }
+}
+
+
+
+.card-custom {
+  opacity: 0;
+  transform: translateX(-160px);
+  transition: all 0.6s ease-out;
+}
+
+@media (max-width: 991.98px) {
+  .card-custom {
+    width: 90%;
+    transform: translateX(-70px);
+  }
+ 
+}
+
+
+.card-custom.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.card-up {
+  transform: translateY(100px); 
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.card-up.visible {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+.btn-more{
+  background-color: #1a3440;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 13px;  
+  font-size: 14px;
+
+}
+
+
+/* 2nd */
+
+.second-container {
+  background-image: url('/assets/images/dividder.jpg');
+  background-size: contain;
+  background-position: center;
+  height: 330px;
+  width: 74%;
+  position: relative;
+  z-index: 0;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 15px;
+}
+
+.text-content {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  color: white;
+  text-align: right;
+  font-size: 36px;
+  
+}
+
+.whatsapp-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-link i {
+  margin-left: 18px; 
+  font-size: 36px;
+
+}
+@media (max-width: 991.98px) {
+  .second-container {
+    width: 99%;
+    height: 150px; 
+    margin-bottom: 5%;
+    
+  }
+  .text-content {
+    top: 40px;
+    font-size: 16px;
+  }
+  .text-content i{
+    font-size: 19px; 
+    
+  }
+
+}

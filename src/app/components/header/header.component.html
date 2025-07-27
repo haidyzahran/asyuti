@@ -1,0 +1,33 @@
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" dir="rtl">
+  <div class="container-fluid">
+
+    
+    <a class="navbar-brand" routerLink="/home">
+      <img src="assets/images/logo.png" alt="الأسيوطي" height="120px" width="100px"/>
+    </a>
+
+   
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav gap-3 text-center w-100">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/latest-works" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">آخر أعمالنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/common-questions" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">الأسئلة الشائعة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/buy" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">ماذا نشتري؟</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

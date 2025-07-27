@@ -1,0 +1,157 @@
+header {
+  height: 110px;
+  align-self: center;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 12px;
+  display: inline-block;
+  color: #011e33;
+  width: 100%;
+  margin: auto;
+  align-self: center;
+}
+
+.navbar-nav {
+  gap: 8px; 
+
+}
+
+.nav-center {
+  justify-content: center !important;
+}
+.navbar-brand img {
+  object-fit: contain;
+  height: 100% ;
+  
+} 
+
+
+.navbar-nav .nav-link.active {
+  color: #00a693 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+  color: #00a693 !important;
+}
+
+
+@media (max-width: 991.98px) {
+  header {
+    height: 75px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0;
+    gap: 0 !important;  
+
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: auto;
+   
+  }
+
+  .nav-link {
+    width: 100%;
+   
+    color: #000 !important;
+    transform: none !important;      
+    background-color: transparent;
+    margin: auto;
+    
+    padding: 10px 0 0 0 !important; 
+    height: 50px;
+  }
+
+  .nav-link:hover {
+    background-color: #353535 !important; 
+    color: #fff !important;
+  }
+
+  .nav-link.active {
+    background-color: #353535 !important; 
+    color: #fff !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 20px;
+    top: 200px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    max-height: 1000px; 
+    opacity: 1;
+  }
+
+  .navbar-toggler {
+    border: none;
+    position: relative;
+    z-index: 999;
+  }
+
+ 
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 16 16'%3E%3Cpath d='M1 3h14v2H1zm0 4h14v2H1zm0 4h14v2H1z'/%3E%3C/svg%3E");
+    font-size: 15px;
+    margin-left: 120px;
+   
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 16 16'%3E%3Cpath d='M2 2l12 12M14 2L2 14' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
+    margin-left: 120px;
+    font-size: 15px;
+  }
+
+  .navbar-toggler {
+    border: none !important;      
+    box-shadow: none !important;   
+    background: transparent; 
+  }
+  .navbar-brand img {
+    max-height: 40px;
+    object-fit: contain;
+    margin-right: 120px;
+    font-size: 15px;
+  } 
+
+
+}
+
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    justify-content: center;  
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;              
+  }
+
+  .navbar-nav .nav-link {
+    width: auto;
+    padding: 6px 12px;
+  }
+
+  .navbar-brand {
+    margin-left: auto;        
+  }
+}
