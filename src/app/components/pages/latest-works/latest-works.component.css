@@ -3,7 +3,7 @@
   width: 100%;
   height: 33vh;
   overflow: hidden;
-  background-image: url('../../../../assets/images/latest-works2.png');
+  /* background-image: url('../../../../assets/images/latest-works2.png'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@
 /* 2nd */
 
 .second-container {
-  background-image: url('../../../../assets/images/dividder.jpg');
+  /* background-image: url('../../../../assets/images/dividder.jpg'); */
   background-size: contain;
   background-position: center;
   height: 330px;
@@ -210,19 +210,6 @@
   margin: 0;
 }
 
-.forth{
-  background-image: url('../../../../assets/images/8.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 330px;
-  width: 78%;
-  position: relative;
-  z-index: 0;
-  margin: auto;
-  margin-top: 2%;
-  border-radius: 15px;
-}
 @media (max-width: 991.98px) {
   .forth-container {
     width: 99%;   
